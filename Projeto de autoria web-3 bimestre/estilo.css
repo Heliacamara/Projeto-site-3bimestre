@@ -30,3 +30,57 @@ div{
 h1{
     color: #e3e0d6;
 }
+
+.dropdown {
+    position: relative;
+  }
+
+  .botao-contato {
+    color: #92815a;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.3s ease;
+  }
+
+  .botao-contato:hover {
+    background-color: #4b403d;
+  }
+
+  .menu-opcoes {
+    display: none;
+    position: absolute;
+    background-color: #3b3230;
+    border-radius: 8px;
+    margin-top: 5px;
+    min-width: 160px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+  .menu-opcoes a {
+    color: #995964
+    padding 10px 15px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .menu-opcoes a:hover {
+    background-color: #4b403d;
+  }
+
+  .mostrar {
+    display: block;
+  }
+
+  #etapas{
+    display: flex;
+    position: relative;
+    bottom: 500px;
+    left:300px;
+    gap: 20px;
+}

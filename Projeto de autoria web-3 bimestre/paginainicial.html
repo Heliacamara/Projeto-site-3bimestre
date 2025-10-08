@@ -13,8 +13,44 @@
     <nav>
         <a href="paginainicial.html" class="menu-item has-children" aria-haspopup="true">INÍCIO /</a>
         <a href="cards.html" class="menu-item has-children" aria-haspopup="true">CARDS /</a>
-        <a href="trajetoriadeaprendizagem.html" class="menu-item has-children" aria-haspopup="true">TRAJETÓRIA DE APRENDIZAGEM</a>
+       
+
+        <div class="dropdown">
+  <button class="botao-contato" onclick="toggleMenu()">
+    Trajetória de aprendizagem <span class="seta">&#9650;</span>
+  </button>
+  <div class="menu-opcoes" id="menuContato">
+    <a href="trajetoriadeaprendizagem.html">TRAJETÓRIA DE APRENDIZAGEM</a>
+    <a href="iniciodetudo.html">INICIO DE TUDO</a>
+    <a href="#">HTML</a>
+    <a href="#">HTML PLUS</a>
+    <a href="#">HTML PLUS</a>
+    <a href="#">CSS </a>
+    <a href="#">CSS PLUS</a>
+    <a href="#">JAVASCRIPT</a>
+  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menuContato");
+    menu.classList.toggle("mostrar");
+  }
+
+  // Fecha o menu se clicar fora dele
+  window.onclick = function(event) {
+    if (!event.target.matches('.botao-contato, .botao-contato *')) {
+      const menu = document.getElementById("menuContato");
+      if (menu.classList.contains('mostrar')) {
+        menu.classList.remove('mostrar');
+      }
+    }
+  }
+</script>
+       
     </nav>
+
     
+
 </body>
 </html>
