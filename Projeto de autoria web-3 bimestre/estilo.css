@@ -1,0 +1,32 @@
+nav {
+    background-color: #e3e0d6;
+    width: 70%;              
+    margin: 0 auto;           
+    text-align: center;       
+    padding: 10px 0;         
+    border-radius: 8px;     
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+nav a {
+    color: #92815a;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+div{
+    background-color: #92815a;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color:rgb(73, 35, 7);
+    padding: 20px;
+    width: 100%;
+    font-weight: bold;
+}
+
+h1{
+    color: #e3e0d6;
+}
