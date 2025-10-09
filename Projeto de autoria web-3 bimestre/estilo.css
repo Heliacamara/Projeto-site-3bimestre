@@ -33,9 +33,9 @@ h1{
 
 .dropdown {
     position: relative;
-  }
+}
 
-  .botao-contato {
+.botao-contato {
     color: #92815a;
     border: none;
     border-radius: 8px;
@@ -45,7 +45,7 @@ h1{
     align-items: center;
     gap: 6px;
     transition: background-color 0.3s ease;
-  }
+}
 
   .botao-contato:hover {
     background-color: #4b403d;
@@ -84,3 +84,31 @@ h1{
     left:300px;
     gap: 20px;
 }
+
+h2{
+  color: #e3e0d6;
+  font-size: 45px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+    /* imagem de fundo */
+    .bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* faz a imagem cobrir tudo */
+      z-index: -1; /* joga a imagem para trás do conteúdo */
+      filter: brightness(50%); /* escurece um pouco a imagem */
+    }
+
+    /* conteúdo por cima */
+    .conteudo {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+    }
