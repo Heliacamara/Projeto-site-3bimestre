@@ -80,18 +80,14 @@
       <br>
       <br>
 
-      <h2 id="Regracss">SELETOR {
-        <br> PROPRIEDADE: VALOR;
-        <br>
-      }</h2>
-
+      <h2 id="Regracss">
+        SELETOR {PROPRIEDADE: VALOR;}</h2>
       <br>
-
-      <h2>Seletor: Alvo da regra de estilo;
+      <h4>Seletor: Alvo da regra de estilo;
       <br> Declaração: Propriedade e valor;
       <br> Propriedade: Define o que será estilizado;
       <br> Valor: Define o quanto o como será estilizado.
-      </h2>
+      </h4>
 
 
       <br>
@@ -107,7 +103,7 @@
 
       <br>
       
-      <h2 id="exemplo1"> exemplo: p {font-size: 20px;} </h2>
+      <img src="imagens da pagina CSS/exemplo1 CSS.png" alt="imagem exemplo de uma regra do CSS externo">
 
       <br>
 
@@ -127,19 +123,14 @@
       caso o valor contenha mais de duas palavras mas são separadas por hífem (-),
       não são utilizadas aspas ("")
       </h2>
+      <br>
 
-
-      <h2 id="exemplo1">exemplos:
-      <br> h1 {font-family: sans-serif;}
-      <br> h1 {font-family: "Arial Narrow";}
-      </h2>
-
+        <img src="imagens da pagina CSS/exemplo CSS.png" alt="exemplo CSS">
+        <img src="imagens da pagina CSS/exemplo CSS (2).png" alt="exemplo CSS (2) ">
 
       <br>
       <br>
       <br>
-      <br>
-
 
       <h1>FOLHAS DE ESTILO</h1>
 
@@ -151,12 +142,70 @@
 
       <br>
 
-      <h2> • Local: É colocado o atributo "style" dentro da tag do elemento de marcação;
-      <br> • Incorporada: É colocado a tag "style" dentro do elemento "head";
-      <br> • Externa: Em um arquivo externo com extensão ".css" e são "linkadas"
+      <h2> • Local(inline): É colocado o atributo "style" dentro da tag do elemento de marcação;
+        <br>
+        <img src="imagens da pagina CSS/exemplo CSS local.png" alt="exemplo CSS local">
+        <br> 
+      • Incorporada(embedded): É colocado a tag "style" dentro do elemento "head";
+        <br> 
+        <img src="imagens da pagina CSS/exemplo CSS incorporado.png" alt="exemplo CSS incorporado">
+        <br>
+      • Externa(linked): Em um arquivo externo com extensão ".css" e são "linkadas"
       por meio de um link no elemento "head", sendo o link: "link rel:stylesheet href:'estilo.css'"
       (sendo "estilo.css" o nome da pasta do css externo).
+        <br>
+        <img src="imagens da pagina CSS/exemplo CSS externo1.png" alt="exemplo CSS externo 1">
+        <img src="imagens da pagina CSS/exemplo externo CSS 2.png" alt="exemplo CSS externo 2">
+        <img src="imagens da pagina CSS/exemplo externo CSS 3.png" alt="exemplo CSS externo 3">
       </h2>
+      <br>
 
+      <h1>📚 PROPRIEDADES DO CSS</h1><br>
+          <h3>Propriedades de texto:</h3>
+              <h4> -> font-family: Define a fonte, permitindo uma lista de fontes de fallback (ex: font-family: Arial, sans-serif;).<br>
+                   -> font-size: Controla o tamanho do texto, usando unidades como px, em ou %.<br>
+                   -> font-weight: Define o peso da fonte, com valores como normal, bold, ou numéricos de 100 a 900.<br>
+                   -> font-style: Define o estilo, como normal,oblique ou italic.<br>
+                   -> color:Especifica a cor do texto,pode ser aplicada da mesma forma que a representação do padrão RGB e suas diversas possibilidades. <br>
+                         💡CASO NÃO LEMBRE VOLTE A PÁGINA DE HTML. <br>
+                   -> text-decoration: Permite especificar uma decoração para o texto.
+                                  • Com valores: none, underline, overline, line-through<br>
+                                  (Obs: Mais de 1 valor pode ser usado).<br>
+                  <img src="imagens da pagina CSS/propriedades de texto CSS.png" alt="exemplo de propriedade de texto CSS">
+                  <br>
+                   -> text-transform: Controla efeitos de capitalização do texto, com valores: uppercase, lowercase, capitalize. <br>
+                   -> text-align: Controla o posicionamento horizontal do conteúdo,com valores: left, right, center, justify. <br>
+                   -> text-indent: Define a identação para  a primeira linha de um texto contida em um bloco. <br>
+                   -> line-height: Permite especificar a altura de uma linha de texto. <br>
+                   -> letter-spacing: Permite especificar o espaçamento entre letras de texto. <br>
+                   -> word-spacing: Permite especificar o espaçamento entre palavras do texto. <br>
+                   -> Fontes Seguras: Conjunto de Fontes comuns aos sistemas operacionais mais usados.<br>
+                           <img src="imagens da pagina CSS/fontes de textoCSS.png" alt="fontes de texto seguras CSS"> <br>
+                   <h2>💡Informações Importantes: <br>
+                            • Quando for usar uma fonte cujo nome tem mais de uma palavra, coloque o nome entre aspas.<br>
+                            Exemplo: "Times New Roman" <br>
+                            • Ao definir várias fontes na propriedade font-family, termine indicando uma família genérica.<br>
+                            Exemplo: serif</h2> <br>                
+                   💡💡font: Uma propriedade de atalho para definir várias propriedades de fonte de uma vez, como font: italic 13px fantasy; 💡💡
+                  </h4> <br>
+
+                   <h3>BORDAS</h3>
+                     <h4>As caracteristicas das bordas podem não ser empregadas para tabelas,também para cabeçalhos,cards,caixa de texto,imagens ,etc.<br>
+                        -> border-width: Permite especificar a largura da borda. <br>
+                             • Os seus valores em px, porcentagem, thin, medium, thick, etc. <br>
+                        -> border-style: Permite especificar um estilo para borda. <br>
+                             • Os seus possíveis valores : none, dotted, dashed, solid, groove, double, rigde. <br>
+                        -> border-color: Permite especificar uma cor para borda. 
+                        -> 💡é possível aplicar uma borda apenas em um dos lados de um elemento específico.<br>
+                                Os lados podem ser definidos da seguinte forma:<br>
+                                      • top – parte superior<br>
+                                      • bottom – parte inferior<br>
+                                      • left – lado esquerdo<br>
+                                      • right – lado direito💡<br>
+                            <img src="imagens da pagina CSS/exemplo de borda CSS.png" alt="exemplo de borda CSS"> Essa borda é apenas do lado esquerdo do P e terá uma borda verde trascejada.
+                                         
+                      
+                      
+                      </h4>
 </body>
 </html>
