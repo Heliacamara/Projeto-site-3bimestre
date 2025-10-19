@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="estilo (1).css">
+</head>
+<body bgcolor="#031634">
+    <nav>
+        <a href="paginainicial (1).html" class="menu-item has-children" aria-haspopup="true">INÍCIO /</a>
+        <a href="cards (1).html" class="menu-item has-children" aria-haspopup="true">CARDS </a>
+        
+  
+      <div class="dropdown">
+        <button class="botao-contato" onclick="toggleMenu()">
+          Trajetória de aprendizagem <span class="seta">&#9650;</span>
+        </button>
+        <div class="menu-opcoes" id="menuContato">
+          <a href="trajetoriadeaprendizagem (1).html">TRAJETÓRIA DE APRENDIZAGEM</a>
+          <a href="iniciodetudo (1).html">INICIO DE TUDO</a>
+          <a href="paginaHTML (1).html">HTML</a>
+          <a href="paginaHTMLPLUS (1).html">HTML PLUS</a>
+          <a href="paginaCSS (1).html">CSS</a>
+          <a href="paginaCSSPLUS (1).html">CSS PLUS </a>
+          <a href="paginaJAVASCRIPT (1).html">JAVASCRIPT</a>
+          <a href="paginaJAVASCRIPTPLUS (1).html">JAVASCRIPT PLUS </a>
+        </div>  
+      </div>
+  
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById("menuContato");
+          menu.classList.toggle("mostrar");
+        }
+  
+        // Fecha o menu se clicar fora dele
+        window.onclick = function(event) {
+          if (!event.target.matches('.botao-contato, .botao-contato *')) {
+            const menu = document.getElementById("menuContato");
+            if (menu.classList.contains('mostrar')) {
+              menu.classList.remove('mostrar');
+            }
+          }
+        }
+      </script>
+    </nav>
+    <h1>AGORA VAMOS ESTUDAR OUTRO TIPO DE LINGUAGEM: <br> <strong> CSS </strong> </h1>
+      <h2> Cascading Style Sheet ou CSS 
+      é uma linguagem de programação para 
+      organizar melhor o estilo das páginas,
+      ou seja, seu visual, e tem um mecânismo
+      simples para adicionar estilo (fonte, cores,
+      espaçamentos, bordas, etc.)
+
+        <br>
+        <br>
+        <br>
+
+        O CSS é um Web Standard: Um conjunto de normas,
+        detrizes, recomendações produzidos pelo W3C
+        e destinados a orientar desenvolvedores para o
+        uso de práticas que possibilitem a criação de uma
+        Web acessível para todos 
+      </h2>
+
+      <center><img src="imagens da pagina CSS/7da0574f943d245723f512620b4e3c51-removebg-preview.png" width="300px"></center>
+
+      <br>
+      <br>
+
+      <h1> REGRA CSS: </h1>
+
+      <br>
+      <br>
+
+      <h2> A regra do CSS é composta por duas partes:
+      seletor e declaração.</h2>
+      
+      <br>
+      <br>
+
+      <h2 id="Regracss">SELETOR {
+        <br> PROPRIEDADE: VALOR;
+        <br>
+      }</h2>
+
+      <br>
+
+      <h2>Seletor: Alvo da regra de estilo;
+      <br> Declaração: Propriedade e valor;
+      <br> Propriedade: Define o que será estilizado;
+      <br> Valor: Define o quanto o como será estilizado.
+      </h2>
+
+
+      <br>
+      <br>
+      <br>
+
+
+      <h2> • A Declaração deve ser colocada obrigatóriamente entre
+      sinais de chave {}. <br>
+       • O sinal de dois pontos (:) na declaração, separa a propriedade
+      do seu respectivo valor.
+      </h2>
+
+      <br>
+      
+      <h2 id="exemplo1"> exemplo: p {font-size: 20px;} </h2>
+
+      <br>
+
+      <h2>Neste caso, o código irá deixar a tag p com 20 pixels de tamanho,
+      caso mais uma declaração venha a ser feita, usamos ponto e vírgula (;) para
+      repará-las
+      </h2>
+
+
+      <br>
+      <br>
+      <br>
+
+
+      <h2>Sobre o valor, precisamos ressaltar sobre algo muito importante:
+      quando há mais de duas palavras sem hífem (-), utilizamos as aspas (""),
+      caso o valor contenha mais de duas palavras mas são separadas por hífem (-),
+      não são utilizadas aspas ("")
+      </h2>
+
+
+      <h2 id="exemplo1">exemplos:
+      <br> h1 {font-family: sans-serif;}
+      <br> h1 {font-family: "Arial Narrow";}
+      </h2>
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <h1>FOLHAS DE ESTILO</h1>
+
+      <br>
+
+      <h2>Existem 3 formas de declaração de folhas de estilo: Local,
+      incorporada e externa.
+      </h2>
+
+      <br>
+
+      <h2> • Local: É colocado o atributo "style" dentro da tag do elemento de marcação;
+      <br> • Incorporada: É colocado a tag "style" dentro do elemento "head";
+      <br> • Externa: Em um arquivo externo com extensão ".css" e são "linkadas"
+      por meio de um link no elemento "head", sendo o link: "link rel:stylesheet href:'estilo.css'"
+      (sendo "estilo.css" o nome da pasta do css externo).
+      </h2>
+
+</body>
+</html>

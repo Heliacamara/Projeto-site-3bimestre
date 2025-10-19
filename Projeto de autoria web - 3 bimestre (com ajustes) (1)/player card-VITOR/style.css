@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+#primeira-parte p {
+    font-family:  'Press Start 2P',cursive,monospace;
+    font-size: 20px;
+    text-align: center;
+    background-color: #8ea8c9;
+    border-radius: 20px;
+    margin-top: 30px;
+    height: 76px;
+    color:#303f53;
+}
+
+
+#missao p {
+    font-family: 'Press Start 2P',cursive,monospace;
+    text-align: center;
+    font-size: 15px;
+    color: #6f829b;
+}
+
+.player-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 410px;
+    width: 350px;
+}
+
+.xp-bar {
+    background-color: azure; 
+    border-radius: 5px;
+    margin-top: 15px;
+    height: 25px;
+    width: 80%;
+}
+
+.xp-bar-fill {
+    background-color: #87bfd5;
+    height: 100%;
+    width: 50%; 
+}
+
+.progresso {
+    background-color: #005aad;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.xp {
+    background-color: #618cc4;
+    height: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#informaçoes h4 {
+    font-family: 'Press Start 2P',cursive,monospace;
+    font-size: 10px;
+    color: #6f829b;
+}
+
+#conquistas p {
+    font-family: 'Press Start 2P',cursive,monospace;
+    font-size: 10px;
+    font-weight:bolder;
+    color: #6f829b;
+}

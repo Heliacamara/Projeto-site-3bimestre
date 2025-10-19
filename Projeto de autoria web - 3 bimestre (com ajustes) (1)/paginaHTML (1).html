@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="estilo (1).css">
+</head>
+<body bgcolor="#031634">
+    <nav>
+        <a href="paginainicial (1).html" class="menu-item has-children" aria-haspopup="true">INÍCIO /</a>
+        <a href="cards (1).html" class="menu-item has-children" aria-haspopup="true">CARDS </a>
+        
+  
+      <div class="dropdown">
+        <button class="botao-contato" onclick="toggleMenu()">
+          Trajetória de aprendizagem <span class="seta">&#9650;</span>
+        </button>
+        <div class="menu-opcoes" id="menuContato">
+          <a href="trajetoriadeaprendizagem (1).html">TRAJETÓRIA DE APRENDIZAGEM</a>
+          <a href="iniciodetudo (1).html">INICIO DE TUDO</a>
+          <a href="paginaHTML (1).html">HTML</a>
+          <a href="paginaHTMLPLUS (1).html">HTML PLUS</a>
+          <a href="paginaCSS (1).html">CSS</a>
+          <a href="paginaCSSPLUS (1).html">CSS PLUS </a>
+          <a href="paginaJAVASCRIPT (1).html">JAVASCRIPT</a>
+          <a href="paginaJAVASCRIPTPLUS (1).html">JAVASCRIPT PLUS </a>
+        </div>
+      </div>
+  
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById("menuContato");
+          menu.classList.toggle("mostrar");
+        }
+  
+        // Fecha o menu se clicar fora dele
+        window.onclick = function(event) {
+          if (!event.target.matches('.botao-contato, .botao-contato *')) {
+            const menu = document.getElementById("menuContato");
+            if (menu.classList.contains('mostrar')) {
+              menu.classList.remove('mostrar');
+            }
+          }
+        }
+      </script>
+    </nav>
+
+    <h1>BEM-VINDOS AO MUNDO <strong>HTML!</strong></h1>
+      <h2>HyperText Markup Language ou HTML
+         significa Linguagem de Marcação de Hipertexto
+         utilizada para produzir páginas na Web.
+         <br>
+         • HTML foi criada por Tim Berners-Lee para
+         resolver o problema de compartilhamento de
+        seus trabalhos com seu grupo de pesquisa.</h2>
+
+        <img src="Imagens da pagina HTML/icone-html-orange.png">
+
+        <h1>Os documentos HTML podem ser interpretados por navegadores como o GOOGLE.</h1>
+
+            <img src="Imagens da pagina HTML/google-logo-sticker-adesivo.jpg">
+
+        <h1>Podem ser criados e editados em diversas ferramentas,como o VSCODE.</h1>
+
+          <img src="Imagens da pagina HTML/imagem-vscode.png">
+
+          <h2>
+              VS Code é um editor de código-fonte gratuito, leve e poderoso desenvolvido pela Microsoft 
+              para Windows, macOS e Linux. Ele é altamente personalizável e suporta diversas linguagens de programação, 
+              além de oferecer recursos como realce de sintaxe, autocompletar código, 
+              depuração e integração com o sistema 
+              de controle de versão Git. Sua popularidade se deve à sua gratuidade, flexibilidade e ao grande ecossistema 
+              de extensões que expandem suas funcionalidades. 
+              <br>
+              Quando acessar o VSCD ,salve seu documento com o nome "page1.htm“ ! <br>
+              • A extensões ".htm" e ".html" indicam que se trata de um documento HTML. <br>
+              • Você pode salvar o documento onde você quiser no seu HD - esteja 
+                certo de salvar em um lugar
+                que depois você possa achar com facilidade.
+          </h2>    
+
+      <h3>Para um estudo mais apronfudado sobre essa ferramenta acesse o link ao lado:</h3>
+            <a href="https://code.visualstudio.com/">SITE VSCODE</a>
+
+    <h1>HISTÓRIA DO HTML:</h1>
+            <h3>
+            • O que é XHTML?
+              – XHTML (Extensible HyperText Mark-up Language)
+              <br>
+              – Uma maneira melhor estruturada deescrever HTML.
+
+            • O que é HTML 5 
+              – Evolução do HTML, mantendo as marcações
+                anteriores, mas usando um modo diferente de
+                estruturar as tags em relação ao XHTML</h3>
+
+    <h1>O QUE SÃO AS TAGS NO HTML?</h1>          
+        <h2>Tags são rótulos usados para informar ao
+             navegador como deve ser apresentado o website;
+            • Todas as tags têm o mesmo formato: começam
+              com um sinal de menor "<" e acabam com um
+                sinal de maior ">";
+            • A forma corrta de escrever as tags é em letras minúsculas;   
+        </h2>
+
+    <h1>HTML<br>
+           • Estrutura básica: é o esqueleto de um documento html, que contém as tags essenciais para definir o tipo do documento, incluindo as tags ("HTML"(Indica que estamos criando uma página HTML)) 
+            ("HEAD" (cabeça), essa tag fornece informações sobre o documento.)
+            ("BODY" (corpo),essa tag abriga o conteúdo do documento.)
+            e outras metatags,em cada uma delas deve estar entre( <  > ).
+            <br>
+          <img src="Imagens da pagina HTML/imagem de uma pagina do VSCODE.png"> 
+          <br>
+
+           • Para dar um título ao documento, você deverá usar a seção"head".
+              - A tag para acresentar um título é: ("title")
+              - O título deve aparecer no topo da barra do navegador.
+              <br>
+          <img src="Imagens da pagina HTML/imagem de uma pagina do VSCODE.png">
+          <img src="Imagens da pagina HTML/imagem para explicar a tag TITLE.png">
+          <br>
+
+            • OUTRAS TAGS DE TEXTO:
+              Tag <i>: Informa ao navegador que todo o texto
+              colocado entre <i> e </i> deve ser mostrado em
+              itálico.<br>
+              -> Tag ("br"): Serve para criar uma quebra de linha.<br>
+              -> Tag ("hr"): Serve para definir uma linha horizontal.<br>
+              -> Tag ("p"): Cria um novo parágrafo <br>
+              LEMBRANDO: em cada uma delas deve estar entre( <  > ).
+              <br>
+              <img src="Imagens da pagina HTML/imagem pagina html-explicaçao TAG TEXTOS.jpeg">
+              <br>
+
+            • Tags semânticas: são tags que dão significado ao conteúdo da página, 
+            facilitando a compreensão dos usuários e dos mecanismos de busca.
+             Por exemplo, usar a tag ("HEAD") para o cabeçalho do site,
+             a tag ("NAV") para a navegação, a tag ("SECTION") para as seções principais, 
+             a tag ("A") pode sser usada para colocar um link na página e também fazer uma 
+             imagem,palavra e símbolos virar link,redirecionando para o lugar que o programador deseje. 
+             LEMBRANDO: em cada uma delas deve estar entre( <  > ).
+            <br>
+                <img src="Imagens da pagina HTML/imagem pagina HTML-links e navegaçoes.jpeg">
+                <img src="Imagens da pagina HTML/imagem pagina HTML-estrutura semantica.jpeg">
+            <br>    
+
+            • Formulários: são elementos que permitem coletar dados dos usuários através de campos de entrada (input),
+             botões (button), caixas de seleção (select), etc. 
+             É preciso definir o método (get ou post) e a ação (url) do formulário, além de usar tags como ("label"), ("fieldset") e ("legend") para organizar os campos.
+              LEMBRANDO: em cada uma delas deve estar entre( <  > ).
+            <br>
+                <img src="Imagens da pagina HTML/imagem pagina HTML-formularios.jpeg">
+            <br>
+
+            • Multimídia: são elementos que permitem inserir conteúdos multimídia na página, como imagens ("IMG"), áudios ("AUDO"), 
+            vídeos ("VIDEO") eiframes (iframes). É preciso definir os atributos como src (fonte), 
+            alt (texto alternativo), width (largura), height (altura), etc. 
+            LEMBRANDO: em cada uma delas deve estar entre( <  > ).
+            <br>
+                <img src="Imagens da pagina HTML/imagem pagina html-multimidia.jpeg">
+            <br>    
+
+            • Para criar TABELAS E LISTAS:
+             LEMBRANDO: em cada uma delas deve estar entre( <  > ).
+            <br>
+                <img src="Imagens da pagina HTML/imagem pagina HTML-tabelas.jpeg">
+                <img src="Imagens da pagina HTML/imagem pagina HTML-lista.jpeg">
+            <br>    
+
+
+            <h1>Falando um pouco sobre atributos e o padrão RGB: </h1>
+                <h2>O que é atributo?
+                   – O atributo serve para permitir que algumas tags possam ser mais específicas.<br> 
+                   – Nas tags podem ser acresentadas informações adicionais.</h2>
+
+                <h2>RGB é a abreviatura do sistema de cores aditivas formado por Vermelho (Red),
+                   Verde (Green) e Azul (Blue).
+                    -Uma cor no modelo de cores RGB pode ser descrita pela indicação da quantidade de
+                    vermelho, verde e azul que contém.</h2>   
+                  <br>
+                    <img src="Imagens da pagina HTML/imagem pagina HTML-padrao RGB.webp">
+                  <br>
+                  <h2>As principais formas de representação são: <br>
+
+                      -> Decimal (0 a 255): Exemplo → (255, 0, 0) = vermelho <br>
+
+                      -> Percentual (0% a 100%): Exemplo → (100%, 0%, 0%) = vermelho <br>
+
+                      -> Hexadecimal (00 a FF): Exemplo → FF0000 = vermelho <br>
+
+                      -> Nos programas de edição de imagem, os valores
+                        são habitualmente representados por meio
+                        de notação hexadecimal, indo de 00 (maisescuro) <br>
+                        até FF (mais claro) para o valor de cada uma das cores.</h2>  
+
+
+
+            • Boas Práticas de Acessibilidade: são recomendações para tornar o código html mais limpo, organizado e acessível para todos os usuários, incluindo aqueles com deficiências ou limitações. 
+              Algumas dicas são: usar indentação, comentários, nomes claros e descritivos para os elementos e atributos,
+              evitar tags obsoletas ou desnecessárias, usar atributos como title, alt e aria para fornecer informações adicionais, etc.LEMBRANDO: em cada uma delas deve estar entre( <  > ). </h1>   
+</body>
+</html>

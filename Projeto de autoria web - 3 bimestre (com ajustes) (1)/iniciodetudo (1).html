@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de tudo</title>
+    <link rel="stylesheet" href="estilo (1).css">
+</head>
+<body>
+    <img src="Imagens da imagens de fundo das principais paginas/imagem de fundo pagina HTML.png" alt="Fundo do site" class="bg">
+    
+    <nav>
+        <a href="paginainicial (1).html" class="menu-item has-children" aria-haspopup="true">INÍCIO /</a>
+        <a href="cards (1).html" class="menu-item has-children" aria-haspopup="true">CARDS </a>
+        
+  
+      <div class="dropdown">
+        <button class="botao-contato" onclick="toggleMenu()">
+          Trajetória de aprendizagem <span class="seta">&#9650;</span>
+        </button>
+        <div class="menu-opcoes" id="menuContato">
+          <a href="trajetoriadeaprendizagem (1).html">TRAJETÓRIA DE APRENDIZAGEM</a>
+          <a href="iniciodetudo (1).html">INICIO DE TUDO</a>
+          <a href="paginaHTML (1).html">HTML</a>
+          <a href="paginaHTMLPLUS (1).html">HTML PLUS</a>
+          <a href="paginaCSS (1).html">CSS</a>
+          <a href="paginaCSSPLUS (1).html">CSS PLUS </a>
+          <a href="paginaJAVASCRIPT (1).html">JAVASCRIPT</a>
+          <a href="paginaJAVASCRIPTPLUS (1).html">JAVASCRIPT PLUS </a>
+        </div>  
+      </div>
+  
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById("menuContato");
+          menu.classList.toggle("mostrar");
+        }
+  
+        // Fecha o menu se clicar fora dele
+        window.onclick = function(event) {
+          if (!event.target.matches('.botao-contato, .botao-contato *')) {
+            const menu = document.getElementById("menuContato");
+            if (menu.classList.contains('mostrar')) {
+              menu.classList.remove('mostrar');
+            }
+          }
+        }
+      </script>
+    </nav>
+    <div class="conteudo"></div>
+
+    <h2>Bem-vindo(a) ao nosso site!
+
+        Seja muito bem-vindo(a)!
+        Este site foi desenvolvido com dedicação por dois alunos Instituição Federal (IFRN), com o objetivo de compartilhar conhecimento e ajudar você a dar os primeiros passos (ou se aperfeiçoar) no mundo do desenvolvimento web.
+        <br>
+        Aqui você vai encontrar conteúdos sobre as principais linguagens da web:
+        🌐 HTML, 🎨 CSS e ⚙️ JavaScript — tudo explicado de forma simples e prática.
+        <br>
+        E tem mais! Como bônus, preparamos: <br>
+        📚 Exercícios para praticar.<br>
+        🎥 Videoaulas para acompanhar o conteúdo visualmente.<br>
+        💡 Dicas exclusivas para aprimorar suas habilidades.<br>
+        <br>
+        Esperamos que este espaço seja uma ferramenta útil no seu aprendizado e que inspire você a criar seus próprios projetos!
+        <br>
+        🚀 Aprenda, pratique e evolua conosco!
+        Explore, aprenda e crie. O próximo grande projeto pode ser o seu,SEJA O AUTOR DA SUA PRÓPRIA HISTÓRIA!
+   </h2>
+   <br>
+
+   <h2>Bem-vindo(a) ao universo web</h2>
+       <h2>Vamos começar aprendendo um pouco do Desenvolvimento web.</h2>
+       <h1>Desenvolvimento web:</h1>
+       <h2>
+1. O Início da Web (Anos 1990–1995)
+
+1990: O cientista Tim Berners-Lee, no CERN, cria a World Wide Web, junto com o HTML, o HTTP e o primeiro navegador (WorldWideWeb).
+
+As páginas eram simples, compostas apenas por texto e links.
+
+O HTML inicial (HTML 1.0 e 2.0) permitia formatação básica e criação de hiperlinks.
+
+Tecnologias principais: HTML, HTTP, servidores simples.
+Estilo: minimalista, sem cores ou imagens complexas.
+<br>
+<img src="Imagens da pagina INICIO DE TUDO/imagem da pagina HTML.png">
+
+<br>
+<br>
+
+<h1>TRAJEÓRIA DO SURGIMENTO DAS REDES DE COMPUTADORES: </h1>
+        <h2> Tudo começou pela DARPANET</h2>
+          <h1>O que é a <strong> DARPANET</strong>?</h1>
+        <h2>      <strong> A DARPANET </strong> (Defense Advanced Research Projects Agency Network) foi um projeto pioneiro de rede
+           de computadores desenvolvido nos <strong> Estados Unidos</strong>, no final da década de 1960, 
+           pela DARPA (Defense Advanced Research Projects Agency), uma agência do Departamento de Defesa americano.
+        <br>  
+           <img src="Imagens da pagina INICIO DE TUDO/bandeira- pagina HTML.png">
+        <br>   
+        🧠 <strong>Objetivo</strong>   
+        <br>  
+            O principal objetivo da DARPANET era criar uma forma segura e confiável de comunicação entre computadores, mesmo que partes da rede fossem danificadas — algo importante em plena Guerra Fria, quando havia o medo de ataques nucleares.
+            A ideia era que, se um ponto da rede fosse destruído, as mensagens ainda conseguissem chegar ao destino por outros caminhos.
+        <br>  
+        💡<strong>Inovação tecnológica</strong>
+        <br>  
+          A DARPANET foi a primeira a usar o conceito de comutação de pacotes (packet switching), no qual as mensagens são divididas em pequenos blocos de dados e enviadas separadamente pela rede, sendo remontadas ao chegar ao destino.
+          Essa tecnologia é a base do funcionamento da Internet até hoje.
+        <br>  
+        🖥️ <strong>Primeiras conexões</strong>
+        <br>
+          O primeiro teste ocorreu em 29 de outubro de 1969, conectando computadores da UCLA (Universidade da Califórnia em Los Angeles) e do Stanford Research Institute.
+
+          A primeira mensagem transmitida foi a palavra “LOGIN”, mas a rede caiu após as duas primeiras letras — ainda assim, esse foi o primeiro passo da história da internet.
+        <br>  
+        🌎 <strong>Evolução</strong>
+        <br>  
+        Com o sucesso do projeto, novas universidades e centros de pesquisa se conectaram à DARPANET.
+        Com o tempo, ela evoluiu, se expandiu e deu origem à Internet, que passou a conectar pessoas e computadores no mundo todo.</h2>
+
+
+        <h1>Depois da revolucionária descorberta da DARPANET,veio logo em seguida a ARPANET a tão conhecida pelos desenvolvedores da web</h1>
+           <h2>Final da década de 60: Criada ARPANET (mãe da internet).</h2>
+              <img src="Imagens da pagina INICIO DE TUDO/imagem das nets- pagina HTML.png">
+
+        <h1>ALGUNS PÁPEIS DE PROFISSIONAIS QUE DESENVOLVE O MUNDO WEB </h1>
+            <h2>Quem é o programador ou desenvolvedor?
+               – Programador ou desenvolvedor de software é
+                  alguém que faz programação de computadores e
+                  desenvolve software ou realiza sua manutenção.<br>
+               – Nos últimos anos, alguns termos passaram a ser
+                  bastante usados em relação ao desenvolvimento:
+                  desenvolvimento frontend, desenvolvimento
+                  backend, desenvolvimento fullstack.</h2>      
+
+          <h1>TIPOS DE DESENVOLVIMENTO</h1>
+            <h2>O <strong>FRONT-END</strong> é a parte do desenvolvimento que
+                se dedica a criar a parte visual e interativa de
+                um site, aplicativo ou software. É o que o
+                usuário vê e usa quando acessa uma plataforma
+                digital. - Tecnologias comumente usadas: HTML, CSS e
+                Javascript.</h2>
+         <br>
+            <h2>Desenvolvimento <strong> backend: </strong> Gerencia a
+                funcionalidade geral do seu aplicativo web.
+                Quando o usuário interage com o front-end, a
+                interação envia uma solicitação para o back-end
+                no formato HTTP. O back-end processa a
+                solicitação e retorna uma resposta. - Usa diversos protocolos e tecnologias</h2>  
+         <br>
+
+              <img src="Imagens da pagina INICIO DE TUDO/back end  e front end.png">
+
+           <h2><strong> Front-end e back-end </strong>são termos amplos que
+                        agrupam logicamente as diferentes
+                        tecnologias e camadas de software de
+                        qualquer aplicativo. O front-end se concentra
+                        nos aspectos que seus usuários podem ver.
+                        Por outro lado, o back-end é tudo o que faz o
+                        aplicativo funcionar.</h2>
+            <h2>Desenvolvimento <strong> fullstack: </strong> Inclui, ambos, front-end e back-end.</h2>  
+
+              <img src="Imagens da pagina INICIO DE TUDO/full stack.jpg">
+         
+             <h3>INFORMAÇÕES NECESSÁRIAS PARA CONSTRUIR UM SITE:</h3>
+              <h2>É necessério projetar
+                  Pensar na mensagem que será transmitida
+                  O público alvo
+                  E de que formar ele vai tornar o ambiente do seu projeto ATRATIVO.
+                </h2> 
+
+                <img src="Imagens da pagina INICIO DE TUDO/pensamento de como projetar.jpg">
+
+                <h1>Veremos três liguagem distintas que trabalham juntas para criar uma página web:</h1>
+                  <h2>O primeiro será HTML,veja na página a seguir -></h2>
+</body>
+</html>

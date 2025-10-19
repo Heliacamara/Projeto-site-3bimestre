@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.xp-bar {
+  background-color: azure; 
+  border-radius: 5px;
+  margin-top: 15px;
+  height: 25px;
+  width: 80%;
+}
+
+.xp-bar-fill {
+  background-color: #D58787;
+  height: 100%;
+  width: 50%; 
+}
+
+
+#conq{
+    font-family: 'Press Start 2P';
+    font-size: 12px;
+    color:#D5A19C;
+}
+#fundogeral{
+    background-color: #FFFFFF;
+    margin: 10px;
+    border-radius: 5px;
+}
+#texto1{
+    text-align:left;
+    color:azure;
+    font-family: 'Press Start 2P';
+}
+
+#texto2{
+    text-align:right;
+    color:azure;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #AA6660;
+  }
+
+#cabeça h2{
+    color: azure;
+    font-family: 'Press Start 2P',cursive,monospace;
+    margin: 20px;
+    font-size: 20px;
+    padding: 10px 0;
+    background-color: #D58787;
+    width: 90%;
+    border-radius: 10px;
+}
+
+#informaçoes h4{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif ;
+    color:#D5A19C;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#corpoinicial h1{
+    font-family:'Press Start 2P',cursive,monospace;
+    color:azure;
+    font-size: 16px;
+    text-align: center;
+}
+
+.character-card {
+    background-color: #AA4F4F;
+    border-radius: 10px;
+    width: 350px;
+    height: 410px;
+}
+
+.highlighted {
+    border: 7px solid #803933;
+    margin: 90px;
+}
+
+.xp {
+    background-color: #803933;
+    height: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.progresso {
+    background-color: #c46961;
+    height: 100%;
+    border-radius: 5px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trajetória de aprendizagem</title>
+    <link rel="stylesheet" href="estilo (1).css">
+</head>
+<body bgcolor="#031634">
+
+    <nav>
+        <a href="paginainicial (1).html" class="menu-item has-children" aria-haspopup="true">INÍCIO /</a>
+        <a href="cards (1).html" class="menu-item has-children" aria-haspopup="true">CARDS </a>
+        
+  
+      <div class="dropdown">
+        <button class="botao-contato" onclick="toggleMenu()">
+          Trajetória de aprendizagem <span class="seta">&#9650;</span>
+        </button>
+        <div class="menu-opcoes" id="menuContato">
+          <a href="trajetoriadeaprendizagem (1).html">TRAJETÓRIA DE APRENDIZAGEM</a>
+          <a href="iniciodetudo (1).html">INICIO DE TUDO</a>
+          <a href="paginaHTML (1).html">HTML</a>
+          <a href="paginaHTMLPLUS (1).html">HTML PLUS</a>
+          <a href="paginaCSS (1).html">CSS</a>
+          <a href="paginaCSSPLUS (1).html">CSS PLUS </a>
+          <a href="paginaJAVASCRIPT (1).html">JAVASCRIPT</a>
+          <a href="paginaJAVASCRIPTPLUS (1).html">JAVASCRIPT PLUS </a>
+        </div>
+      </div>
+  
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById("menuContato");
+          menu.classList.toggle("mostrar");
+        }
+  
+        // Fecha o menu se clicar fora dele
+        window.onclick = function(event) {
+          if (!event.target.matches('.botao-contato, .botao-contato *')) {
+            const menu = document.getElementById("menuContato");
+            if (menu.classList.contains('mostrar')) {
+              menu.classList.remove('mostrar');
+            }
+          }
+        }
+      </script>
+    </nav>
+
+    <h1>TRAJETÓRIA DE APRENDIZAGEM</h1>
+    <div>
+        <img id="algoritmos" src="Imagens da imagens de fundo das principais paginas/algoritmos-imagemdefundo.jpg">
+        <div id="etapas">
+        
+            <a href="iniciodetudo.html"><img src="Imagens das logo da TA (1)/icone inicio de tudo.png" height="150px" width="150px" alt="icone inicio de tudo"></a>
+            <a href="paginaHTML.html"><img src="Imagens das logo da TA (1)/iconeHTML.png" height="170px" width="170px" alt="icone html"></a>
+            <a href="paginaHTMLPLUS.html"><img src="Imagens das logo da TA (1)/iconeHTMLPLUS (1).png" height="190px" width="190px" alt="icone html plus"></a>
+            <a href="paginaCSS.html"><img src="Imagens das logo da TA (1)/iconeCSS (1).png" height="210px" width="210px" alt="icone css"></a>
+            <a href="paginaCSSPLUS.html"><img src="Imagens das logo da TA (1)/iconeCSSPLUS (1).png" height="230px" width="230px" alt="icone css plus"></a>
+            <a href="paginaJAVASCRIPT.html"><img src="Imagens das logo da TA (1)/iconeJAVASCRIPT.png" height="250px" width="250px" alt="icone javascript"></a>
+            <a href="paginaJAVASCRIPTPLUS.html"><img src="Imagens das logo da TA (1)/iconeJAVASCRIPTPLUS.png" height="270px" width="270px" alt="icone javascript plus"></a>
+    </div>
+</body>
+</html>

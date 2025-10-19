@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML PLUS</title>
+    <link rel="stylesheet" href="estilo (1).css">
+</head>
+<body >
+    <nav>
+        <a href="paginainicial (1).html" class="menu-item has-children" aria-haspopup="true">INÍCIO /</a>
+        <a href="cards (1).html" class="menu-item has-children" aria-haspopup="true">CARDS </a>
+        
+  
+      <div class="dropdown">
+        <button class="botao-contato" onclick="toggleMenu()">
+          Trajetória de aprendizagem <span class="seta">&#9650;</span>
+        </button>
+        <div class="menu-opcoes" id="menuContato">
+          <a href="trajetoriadeaprendizagem (1).html">TRAJETÓRIA DE APRENDIZAGEM</a>
+          <a href="iniciodetudo (1).html">INICIO DE TUDO</a>
+          <a href="paginaHTML (1).html">HTML</a>
+          <a href="paginaHTMLPLUS (1).html">HTML PLUS</a>
+          <a href="paginaCSS (1).html">CSS</a>
+          <a href="paginaCSSPLUS (1).html">CSS PLUS </a>
+          <a href="paginaJAVASCRIPT (1).html">JAVASCRIPT</a>
+          <a href="paginaJAVASCRIPTPLUS (1).html">JAVASCRIPT PLUS </a>
+        </div>  
+      </div>
+  
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById("menuContato");
+          menu.classList.toggle("mostrar");
+        }
+  
+        // Fecha o menu se clicar fora dele
+        window.onclick = function(event) {
+          if (!event.target.matches('.botao-contato, .botao-contato *')) {
+            const menu = document.getElementById("menuContato");
+            if (menu.classList.contains('mostrar')) {
+              menu.classList.remove('mostrar');
+            }
+          }
+        }
+      </script>
+    </nav>
+
+    <h1>NESSA PÁGINA IREMOS OFERECER MEIOS ONDE VOCÊ PODE APRIMORAR INFORMAÇÕES E COLOCAR EM PRÁTICA TUDO QUE APRENDEU!</h1>
+       <h2>Para ter acesso a programadores que te ensinam e ofertam uma boa qualidade de conhecimento 
+        sobre HTML,iremos aprensentar algum desses e juntamente dicas: </h2>
+
+        <h3>A primeira página a ser recomendada:
+          <a href="https://youtu.be/UForX7ehChM?si=7x5P3GxBJoInTOVo">ASSISTA AQUI</a>
+          DICA:Assista todos os módulos ofertados.
+        </h3>
+        <br>
+
+        <h3>A segunda página a ser recomendada:
+          <a href="https://www.youtube.com/watch?v=Fhy-5CtVkiM">ASSISTA AQUI</a>
+        </h3>
+        <br>
+
+        <h3>A segunda página a ser recomendada:
+          <a href="https://youtu.be/SV7TL0hxmIQ?si=coK06ah-9JHPXW3k">ASSISTA AQUI</a>
+        </h3>
+
+        <h2>ALGUNS EXERCÍCIO PARA MELHOR FIXAÇÃO DO CONTEÚDO:</h2>
+
+        <a href="https://share.google/mklFQixf7PMIn5Sj6">ACESSE O EXERCÍCIO</a>
+        <br>
+        <a href="https://share.google/AK3MsB70WQYEtGo09">ACESSE O EXERCÍCIO</a>
+        <br>
+        <a href="https://share.google/F9kpsNG45uTiwNmoZ">ACESSE O EXERCÍCIO</a>
+</body>
+</html>
